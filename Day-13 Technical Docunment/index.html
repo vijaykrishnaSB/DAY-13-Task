@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main-doc">
+    <nav id="navbar">
+        <div class="divider"></div>
+        <header>Javascript Tutorial</header>
+        <ul>
+            <li><a href="#JavaScript-Introduction" class="nav-link">JavaScript-Introduction</a></li>
+            <li><a href="#JavaScript-Syntax" class="nav-link">JavaScript-Syntax</a></li>
+            <li> <a href="#JavaScript-Variables" class="nav-link">JavaScript-Variables</a></li>
+            <li><a href="#JavaScript-Operators" class="nav-link">JavaScript-Operators</a></li>
+            <li><a href="#JavaScript-If...Else" class="nav-link">JavaScript-If...Else</a></li>
+            <li><a href="#JavaScript-While Loop" class="nav-link">JavaScript-While Loop</a></li>
+            <li><a href="#JavaScript-For Loop" class="nav-link">JavaScript-For Loop</a></li>
+            <li><a href="#JavaScript-For In" class="nav-link">JavaScript-For In</a></li>
+            <li><a href="#JavaScript-Function" class="nav-link">JavaScript-Function</a></li>
+            <li><a href="#JavaScript-Events" class="nav-link">JavaScript-Events</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section class="main-section" id="JavaScript-Introduction">
+            <header>JavaScript-Introduction</header>
+            <p>JavaScript is a lightweight, cross-platform, and interpreted scripting language. It is well-known for the development of web pages, many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments. JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements.</p>
+            <p>Client-side: It supplies objects to control a browser and its Document Object Model (DOM). Like if client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation. Useful libraries for the client-side are AngularJS, ReactJS, VueJS and so many others.</p>
+            <p>Server-side: It supplies objects relevant to running JavaScript on a server. Like if the server-side extensions allow an application to communicate with a database, and provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. The useful framework which is the most famous these days is node.js.</p>
+        <section class="main-section" id="Javascript-Syntax">
+            <header>Javascript-Syntax</header>
+            <p>JavaScript is a lightweight and dynamic computer programming language. It is used to create client-side dynamic pages. It is open-source and cross-platform language.</p>
+            <code>
+                // Variable Declarations
+                var x, y, sum;<br>
+                // Assign value to the variables<br>
+                x = 3;<br>
+                y = 23;<br>
+                // Use arithmetic operator to<br>
+                // add two numbers<br>
+                sum = x + y;<br>               
+                document.write(sum);                
+            </code>
+        </section>
+        <section class="main-section" id="JavaSript-Variables">
+            <header>JavaScript-Variables</header>
+            <p>
+                4 Ways to Declare a JavaScript Variable:<br>
+                    Using var,<br>
+                    Using let,<br>
+                    Using const,<br>
+                    Using Nothing.
+                </p>
+                <code>var x = 5;<br>
+                    var y = 6;<br>
+                    var z = x + y;</code>
+                <code>let x = 5;<br>
+                    let y = 6;<br>
+                    let z = x + y;</code>    
+                <code>const price1 = 5;<br>
+                    const price2 = 6;<br>
+                    let total = price1 + price2;</code>   
+                <code>x = 5;<br>
+                    y = 6;<br>
+                    z = x + y;</code>
+        </section>
+        <section class="main-section" id="JavaScript-Operators">
+            <header>JavaScript-Operators</header>
+            <p>An operator is capable of manipulating a certain value or operand. Operators are used to perform specific mathematical and logical computations on operands. In other words, we can say that an operator operates the operands. In JavaScript operators are used for compare values, perform arithmetic operations etc. There are various operators supported by </p>
+            <ul>
+                <li>Arithmetic Operators</li>
+                <li>Comparison Operators</li>
+                <li>Logical Operators</li>
+                <li>Assignment Operators</li>
+                <li>Ternary Operators</li>
+                <li>typeof Operator</li>
+            </ul>
+        </section>
+        <section class="main-section" id="JavaScript-If...Else">
+            <header>JavaScript-If...Else</header>
+            <p>Very often when you write code, you want to perform different actions for different decisions.
+                You can use conditional statements in your code to do this 
+                In JavaScript we have the following conditional statements:</p>
+                <ul>
+                    <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+                    <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+                    <li>Use else if to specify a new condition to test, if the first condition is false</li>
+                    <li>Use switch to specify many alternative blocks of code to be executed</li>
+                </ul>
+                <code>if (hour < 18) {<br>
+                    greeting = "Good day";<br>
+                    } else {<br>
+                    greeting = "Good evening";<br>
+                    }</code>
+        </section>
+        <section class="main-section" id="JavaScript-While Loop">
+            <header>JavaScript-While Loop</header>
+            <p>The while loop loops through a block of code as long as a specified condition is true.
+            <p>The loop in this example uses a while loop to collect the car names from the cars array:</p>
+                <code>const cars = ["BMW", "Volvo", "Saab", "Ford"];<br>
+                    let i = 0;<br>
+                    let text = "";<br>
+                    
+                    while (cars[i]) {<br>
+                        text += cars[i];<br>
+                        i++;<br>
+                    }</code>
+            </section>
+        <section class="main-section" id="JavaScript-For Loop">
+            <header>JavaScript-For Loop</header>
+            <p>Loops are handy, if you want to run the same code over and over again, each time with a different value.
+                Often this is the case when working with arrays:</p>
+            <code>for (let i = 0; i < cars.length; i++) {<br>
+                text += cars[i] + "<br>";
+            } </code>
+        </section>
+        <section class="main-section" id="JavaScript-For In">
+            <header>JavaScript-For In</header>
+            <p>The JavaScript for in statement loops through the properties of an Object:</p>
+            <code>const person = {fname:"John", lname:"Doe", age:25};<br>
+                let text = "";<br>
+                for (let x in person) {<br>
+                    text += person[x];<br>
+                } </code>
+        </section>
+        <section class="main-section" id="JavaScript-Function">
+            <header>JavaScript-Function</header>
+            <p>A JavaScript function is a block of code designed to perform a particular task.
+                A JavaScript function is executed when "something" invokes it (calls it).
+            </p>
+            <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+                Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+                The parentheses may include parameter names separated by commas:
+                (parameter1, parameter2, ...)
+                The code to be executed, by the function, is placed inside curly brackets: {}</p>
+                <code>function myFunction(p1, p2) {<br>
+                    return p1 * p2;   // The function returns the product of p1 and p2
+                    }</code>
+            </section>
+        <section class="main-section" id="JavaScript-Events">
+            <header>JavaScript-Events</header>
+            <p>HTML events are "things" that happen to HTML elements.
+                When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
+                <p>An HTML event can be something the browser does, or something a user does.
+                    Here are some examples of HTML events:</p>
+                <ul>
+                    <li>An HTML web page has finished loading</li>
+                    <li>An HTML input field was changed</li>
+                    <li>An HTML button was clicked</li>
+                </ul>   
+                <p>With single quotes:</p> 
+                <code>
+                    < element event='some JavaScript'>
+                    </code>
+                <p>With double quotes:</p> 
+                <code>
+                    < element event="some JavaScript">
+                    </code>
+            </section>
+    </div>
+</div>
+</body>
+</html>
